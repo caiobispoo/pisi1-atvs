@@ -54,6 +54,8 @@ elif (numero3 >= numero1) and (numero3 >= numero2) and (numero2 >= numero1):
     print(f"Ordem decrescente: {numero3}, {numero2} e {numero1}")
 elif (numero3 >= numero1) and (numero3 >= numero2) and (numero1 >= numero2):
     print(f"Ordem decrescente: {numero3}, {numero2}, {numero1}")
+else:
+    print("Algum dos valores é imválido.")
 
 print("=" * 70)
 # Faça um programa que pergunte o preço de três produtos e informe qual produto
