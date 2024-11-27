@@ -1,6 +1,7 @@
 # Faça um programa que leia 2 strings e informe o conteúdo delas seguido do seu 
 # comprimento. Informe também se as duas strings possuem o mesmo comprimento  e 
 # são iguais ou diferentes no conteúdo.
+
 print("Compare duas Strings.")
 string1 = input("Primeira string: ")
 string2 = input("Segunda string: ")
@@ -62,9 +63,10 @@ print("=" * 70, '\n')
 
 palavra = "CACHORRO"
 letras_escolhidas = ""
-output = ""
+output = "_" * len(palavra)
 erros = 0
-print("======JOGO DA FORCA======")
+print(f"{'JOGO DA FORCA':=^70}")
+print(f"A palavra é: {output}\n")
 
 while erros <= 6 and palavra != output:
     letra = input("Digite uma letra: ").strip().upper()
@@ -74,7 +76,8 @@ while erros <= 6 and palavra != output:
 
     if letra not in palavra:
         erros += 1
-        print(f"--> Você errou pela {erros}a vez. Tente de novo.\n")
+        if erros < 7:
+            print(f"--> Você errou pela {erros}a vez. Tente de novo.\n")
 
     else:
         output = ""
@@ -112,4 +115,4 @@ for i in DNA:
     elif i == "T":
         RNAm += "A"
 
-print(f"A faixa de RNA do DNA ({DNA}) é: {RNAm}")
+print(f"A faixa de RNAm do DNA ({DNA}) é: {RNAm}\n")
