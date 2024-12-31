@@ -144,7 +144,7 @@ print(
     f"Votos nulos: {total_votos_nulos}\n\t",
     f"Votos em branco: {total_votos_brancos}\n\t",
     f"Porcentagem de votos nulos: {porcentagem_nulos:.2f}%\n\t"
-    f"Porcentagem de votos em branco: {porcentagem_brancos:.2f}%\n"
+    f"Porcentagem de votos em branco: {porcentagem_brancos:.2f}%\n\t"
 )
 
 print("=" * 70, '\n')
